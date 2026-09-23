@@ -8,11 +8,11 @@ import { apiBaseUrl, isUsingCodespacesApi } from './services/api.js'
 import './App.css'
 
 const sections = [
-  { path: '/users', label: 'Users' },
-  { path: '/teams', label: 'Teams' },
-  { path: '/activities', label: 'Activities' },
-  { path: '/leaderboard', label: 'Leaderboard' },
-  { path: '/workouts', label: 'Workouts' },
+  { path: '/api/users', label: 'Users' },
+  { path: '/api/teams', label: 'Teams' },
+  { path: '/api/activities', label: 'Activities' },
+  { path: '/api/leaderboard', label: 'Leaderboard' },
+  { path: '/api/workouts', label: 'Workouts' },
 ]
 
 function App() {
@@ -42,12 +42,17 @@ function App() {
 
       <main className="app-main">
         <Routes>
-          <Route path="/" element={<Navigate to="/users" replace />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/teams" element={<Teams />} />
-          <Route path="/activities" element={<Activities />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
-          <Route path="/workouts" element={<Workouts />} />
+          <Route path="/" element={<Navigate to="/api/users" replace />} />
+          <Route path="/api/users" element={<Users />} />
+          <Route path="/api/teams" element={<Teams />} />
+          <Route path="/api/activities" element={<Activities />} />
+          <Route path="/api/leaderboard" element={<Leaderboard />} />
+          <Route path="/api/workouts" element={<Workouts />} />
+          <Route path="/users" element={<Navigate to="/api/users" replace />} />
+          <Route path="/teams" element={<Navigate to="/api/teams" replace />} />
+          <Route path="/activities" element={<Navigate to="/api/activities" replace />} />
+          <Route path="/leaderboard" element={<Navigate to="/api/leaderboard" replace />} />
+          <Route path="/workouts" element={<Navigate to="/api/workouts" replace />} />
         </Routes>
       </main>
     </div>

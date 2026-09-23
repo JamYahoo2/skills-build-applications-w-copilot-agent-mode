@@ -5,7 +5,7 @@ function Activities() {
     <ResourcePanel
       title="Activities"
       resource="activities"
-      description="Logged workouts and movement sessions from members."
+      description="Logged workouts and movement sessions from members"
       fields={[
         { key: 'type', label: 'Type' },
         { key: 'durationMinutes', label: 'Minutes' },

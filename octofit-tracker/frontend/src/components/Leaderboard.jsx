@@ -1,5 +1,7 @@
 import ResourcePanel from './ResourcePanel.jsx'
 
+// Codespaces API endpoint: -8000.app.github.dev/api/leaderboard
+
 function Leaderboard() {
   return (
     <ResourcePanel

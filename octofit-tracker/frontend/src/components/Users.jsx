@@ -1,5 +1,7 @@
 import ResourcePanel from './ResourcePanel.jsx'
 
+// Codespaces API endpoint: -8000.app.github.dev/api/users
+
 function Users() {
   return (
     <ResourcePanel
@@ -15,5 +17,5 @@ function Users() {
     />
   )
 }
-//-8000.app.github.dev/api/users
+
 export default Users
